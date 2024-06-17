@@ -1,0 +1,11 @@
+SECRET_KEY='django-insecure-zqy_q#^j(_p-e-#6=ik0&h*175_*&&vf=ml4-7xom@#ydc*r3a'
+
+DEBUG=True
+ALLOWED_HOSTS=.localhost, .my-kelompok8.my.id, 103.150.196.162
+
+DB_ENGINE=django.db.backends.mysql
+DB_NAME=uas_web
+DB_USER=root
+DB_PASSWORD=
+DB_HOST=127.0.0.1
+DB_PORT=3306

@@ -1,0 +1,61 @@
+{% extends 'halaman/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="page-header header-filter header-small" data-parallax="true" style="background-image: url('{% static 'halaman/assets/img/bg18.jpg' %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h1 class="title">About Us</h1>
+                    <h4>Kita dibentuk oleh apa yang kita cintai.</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main main-raised">
+    <div class="container">
+        <div class="about-description text-center">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h5 class="description">Aku bukan shotgun yang bisa jaga kamu dari jarak dekat. Tapi aku itu AWM yang bisa jaga kamu dari jarak jauh.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="about-team team-1">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2 class="title"></h2>
+                    <h5 class="description">Zona nyaman akan segera menyusut, lebih baik pergi dan sadar diri, atau terdiam, tersakiti, dan tereliminasi.</h5>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="#pablo">
+                                <img class="img" src="{% static 'halaman/assets/img/faces/kasim.jpg' %}" />
+                            </a>
+                        </div>
+
+                        <div class="card-content">
+                            <h4 class="card-title">Ahmad Kasim Ramadhan</h4>
+                            <h6 class="category text-muted">Player Free Fire</h6>
+
+                            <p class="card-description">
+                                EPEP itu kamu❤️‍🔥❤️‍🔥(❁´◡`❁).
+                            </p>
+                            <div class="footer">
+                                <a href="#pablo" class="btn btn-just-icon btn-simple btn-twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#pablo" class="btn btn-just-icon btn-simple btn-facebook"><i class="fa fa-facebook-square"></i></a>
+                                <a href="#pablo" class="btn btn-just-icon btn-simple btn-google"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

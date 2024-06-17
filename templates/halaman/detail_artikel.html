@@ -1,0 +1,48 @@
+{% extends 'halaman/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="page-header header-filter header-small" data-parallax="true" style="background-image: url('{% static "halaman/assets/img/bg10.jpg" %}')"></div>
+<div class="main main-raised "style="margin-top: -600px;">
+    <div class="container">
+        <div class="section section-text">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    {% if artikel.thumbnail %}
+                    <img style="width: 100%;" src="{{ artikel.thumbnail.url }}" alt=""></a>
+                    {% else %}
+                    <img src="{% static 'halaman/assets/img/logo.png' %}" alt=""/>
+                    {% endif %}
+
+                    <h3 class="title">{{ artikel.judul }}</h3>
+                    <p>{{ artikel.isi }}</p>
+
+                    <blockquote>
+                        <!-- <p>“And thank you for turning my personal jean jacket into a couture piece.”</p> -->
+                        <small>Created by: {{ artikel.author }}</small>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-blog-info">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="blog-tags mb-5">
+                                Kategori:
+                                <span class="label label-primary">{{ artikel.kategori }}</span>
+                                <!-- <span class="label label-primary">Stories</span>
+                                <span class="label label-primary">Castle</span> -->
+                            </div>
+                        </div>
+                      </div>
+                    <hr />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
